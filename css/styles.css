@@ -74,6 +74,7 @@ address {
   clip: rect(0 0 0 0);
 }
 .section {
+  background-color: var(--second-priority-color);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -207,6 +208,15 @@ address {
   text-transform: uppercase;
   color: var(--main-color);
 }
+.icon-box {
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--card-gap);
+}
 
 /*------------------- ABOUT---------------- */
 
@@ -275,6 +285,39 @@ address {
 /* .social-icon:hover {
   fill: var(--second-priority-color);
 } */
+
+/*------------------- CLIENTS---------------- */
+.clients {
+  background-color: var(--second-priority-color);
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+.clients-item + .clients-item {
+  margin-left: var(--card-gap);
+}
+.clients-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  background-color: var(--second-priority-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+}
+.clients-icon {
+  fill: var(--icon-color);
+}
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
+}
 /*------------------- FOOTER---------------- */
 .footer {
   background: var(--second-background-color);
